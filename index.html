@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern CSS Layout Techniques</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Modern CSS Layout Techniques</h1>
+      <p>Flexbox, Grid & Responsive Web Design</p>
+    </header>
+
+    <nav>
+      <div class="nav-container">
+        <div class="logo">LayoutMaster</div>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Left Sidebar -->
+      <aside class="sidebar sidebar-left">
+        <h2>Left Sidebar</h2>
+        <p>
+          This sidebar demonstrates CSS Grid layout for the main page structure.
+        </p>
+        <ul>
+          <li>Grid Item 1</li>
+          <li>Grid Item 2</li>
+          <li>Grid Item 3</li>
+          <li>Grid Item 4</li>
+        </ul>
+        <button class="btn mt-1">Learn More</button>
+      </aside>
+
+      <!-- Main Content -->
+      <main>
+        <section class="hero">
+          <h1>Create Beautiful Layouts</h1>
+          <p>
+            Learn how to use Flexbox and CSS Grid to create modern, responsive
+            web layouts that work on any device.
+          </p>
+          <button class="btn mt-1">Get Started</button>
+        </section>
+
+        <section class="features">
+          <div class="feature">
+            <div class="feature-icon">📱</div>
+            <div>
+              <h3>Responsive Design</h3>
+              <p>
+                Create layouts that adapt to any screen size using media queries
+                and relative units.
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">⚡</div>
+            <div>
+              <h3>Fast & Lightweight</h3>
+              <p>
+                Built with pure CSS - no frameworks or libraries for optimal
+                performance.
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🎨</div>
+            <div>
+              <h3>Modern Techniques</h3>
+              <p>
+                Utilize the latest CSS features including Flexbox and Grid for
+                sophisticated layouts.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <h2 class="mt-2">CSS Grid Card Layout</h2>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-img">📐</div>
+            <div class="card-content">
+              <h3>Flexbox</h3>
+              <p>
+                One-dimensional layout model for creating flexible and efficient
+                layouts.
+              </p>
+              <button class="btn mt-1">Read More</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">🔲</div>
+            <div class="card-content">
+              <h3>CSS Grid</h3>
+              <p>
+                Two-dimensional layout system for designing complex web layouts.
+              </p>
+              <button class="btn mt-1">Read More</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">📱</div>
+            <div class="card-content">
+              <h3>Responsive Design</h3>
+              <p>
+                Create adaptive layouts that work on mobile, tablet, and
+                desktop.
+              </p>
+              <button class="btn mt-1">Read More</button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Right Sidebar -->
+      <aside class="sidebar sidebar-right">
+        <h2>Right Sidebar</h2>
+        <p>
+          This sidebar demonstrates how CSS Grid can create complex layouts with
+          minimal code.
+        </p>
+        <div class="card mt-1">
+          <div class="card-content">
+            <h3>Subscribe</h3>
+            <p>Stay updated with the latest web design techniques.</p>
+            <button class="btn mt-1">Subscribe Now</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>© 2023 Modern CSS Layouts. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#">📱</a>
+          <a href="#">📧</a>
+          <a href="#">🐦</a>
+          <a href="#">📷</a>
+        </div>
+        <p>Made with pure HTML and CSS</p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", function () {
+          document.querySelector(".nav-menu").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
